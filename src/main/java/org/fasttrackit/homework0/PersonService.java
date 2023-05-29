@@ -32,6 +32,7 @@ public class PersonService {
         public static List<Person> personsOverEighteen() {
             List<Person> personsOverEighteen = people.stream().filter(person -> person.age > 18).toList();
             return personsOverEighteen;
+
         }
         public static List<Person> personsFromOradea(){
             List<Person> oradealist = people.stream().filter(person -> person.city.equals("Oradea")).toList();
